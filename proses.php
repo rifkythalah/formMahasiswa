@@ -7,12 +7,16 @@ $kelas = $_POST['kelas'];
 $email = $_POST['email'];
 $saran = $_POST['saran'];
 $jenis_kelamin = $_POST['jenis_kelamin'];
+$hobi = $_POST['hobi'];
 $submit = $_POST['submit'];
 
-$query = "INSERT INTO form VALUES('$nama', '$nim', '$kelas', '$email', '$saran', '$jenis_kelamin', '$submit')";
+$query = "INSERT INTO form VALUES('$nama', '$nim', '$kelas', '$email', '$saran', '$jenis_kelamin', '$hobi', '$submit')";
+
 
 mysqli_query($koneksi, $query);
+
 ?>
+
 
 <html>
 <head>
@@ -46,6 +50,10 @@ mysqli_query($koneksi, $query);
             <tr>
                 <td>Jenis Kelamin</td>
                 <td>: <?php echo $jenis_kelamin; ?></td>
+            </tr>
+            <tr>
+                <td>Hobi</td>
+                <td>: <?php echo $hobi; ?></td>
             </tr>
             <tr>
                 <td colspan="2">
