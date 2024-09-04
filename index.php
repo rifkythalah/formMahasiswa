@@ -42,6 +42,12 @@
                     <label><input type="radio" name="jenis_kelamin" value="laki-laki" required /> Laki-laki</label>
                     <label><input type="radio" name="jenis_kelamin" value="perempuan" required /> Perempuan</label>
                 </p>
+                <p>
+                    <label>Hobi</label>
+                    <label><input type="checkbox" name="hobi" value="bola">bola</label>
+                    <label><input type="checkbox" name="hobi" value="basket">basket</label>
+                    <label><input type="checkbox" name="hobi" value="renang">renang</label>
+                </p> 
                 <p class="submit">
                     <input type="submit" name="submit" value="Daftar" />
                 </p>
